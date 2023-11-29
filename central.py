@@ -37,7 +37,7 @@ class main:
                     if i == 'y':
                         # Drop the database if confirmed
                         self.cursor.execute("DROP DATABASE IF EXISTS ShoppingMallBilling;")
-                        print("*****DATABASE DELETED*****")
+                        print("*****DATABASE DELEATED*****")
                         break
                     else:
                         print("Congrats, you avoided a big mistake.")

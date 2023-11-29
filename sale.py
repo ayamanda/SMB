@@ -114,25 +114,25 @@ class sale:
                                                                                                        gst, self.aid))
 
         print()
-        print('|', end='')
+        print('+', end='')
         for i in range(0, 13 + 20 + 17 + 17 + 21):
             print('-', end='')
-        print('|')
+        print('+')
         a = "{:<13} {:<20} {:<17} {:<17} {:17} {:<2}".format("| Item ID", "| Item Name", "| Item Category",
                                                              "| Item quantity", "| Item Cost", "|")
         print(a)
-        print('|', end='')
+        print('+', end='')
         for i in range(0, 13 + 20 + 17 + 17 + 21):
             print('-', end='')
-        print('|')
+        print('+')
         for a, b in zip(l_k, l_v):
             b = "{:<13} {:<20} {:<17} {:<17} {:17} {:<2}".format('|   ' + a, '|   ' + b[0], '|   ' + str(b[1]),
                                                                  '|   ' + str(b[2]), '|   ' + str(b[3]), '|')
             print(b)
-        print('|', end='')
+        print('+', end='')
         for i in range(0, 13 + 20 + 17 + 17 + 21):
             print('-', end='')
-        print('|')
+        print('+')
 
         print()
         print("GST: ₹", gst)

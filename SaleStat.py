@@ -11,18 +11,18 @@ class SaleStat:
 
                 # Print a table header
                 print()
-                print('|', end='')
+                print('+', end='')
                 for i in range(0, 17 + 13 + 17 + 17 + 13 + 18):
                     print('-', end='')
-                print('|')
+                print('+')
                 a = "{:<17} {:<13} {:<17} {:<17} {:<13} {:<13} {:<2}".format("| Invoice Number", "| Agent ID",
                                                                              "| Customer Name", "| Customer mob",
                                                                              "| Netpay", "| Gst", "|")
                 print(a)
-                print('|', end='')
+                print('+', end='')
                 for i in range(0, 17 + 13 + 17 + 17 + 13 + 18):
                     print('-', end='')
-                print('|')
+                print('+')
 
                 # Iterate through the retrieved rows and format and print them
                 for r in row:
@@ -32,10 +32,10 @@ class SaleStat:
                     print(b)
 
                 # Print a closing line for the table
-                print('|', end='')
+                print('+', end='')
                 for i in range(0, 17 + 13 + 17 + 17 + 13 + 18):
                     print('-', end='')
-                print('|')
+                print('+')
 
                 con.commit()  # Commit any changes made to the database
 
